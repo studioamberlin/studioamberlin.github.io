@@ -234,9 +234,31 @@
 
         })
     </script>
+
+
+       <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+       
 </head>
 
-  <body>
+  <body onload="startTime()">
     <div data-server-rendered="true" id="__nuxt"><div></div><div id="__layout">
         
         
@@ -277,7 +299,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="text-center col-sm-20">
-                <h2 class="type-title">amber lin is a digital designer in new york city. currently at sandow design group. previously at pratt institute mfa. before that she modeled with haute couture brands, where mediated movements within a given space inspired her design philosophy.</h2>
+                <h2 class="type-title">Amber Lin is a digital designer in new york city. Currently at SANDOW DESIGN GROUP. Previously at Pratt Institute MFA. Before that she modeled with haute couture brands, where mediated movements within a given space inspired her design philosophy.</h2>
                 <!---->
                 <!---->
                 <!----<button class="button ~lg -tertiary mt-3">LinkedIn</button>
@@ -313,20 +335,8 @@
             <div class="base-card__container">
                 <div class="base-card__start">
                     <div class="d-flex flex-column gap-1">
-                        <div class="d-flex gap-0.5">
-                            <span class="badge -secondary -rounded -outline">
-                                UI/UX 
-                            </span>
-                            <span class="badge -secondary -rounded -outline">
-                                Creative Direction
-                            </span>
-                            <span class="badge -secondary -rounded -outline">
-                                Design Strategy
-                            </span>
-                        </div>
                         <h3 class="type-h3">
-                            <a href="mailto: amberhsuanlin@gmail.com" target="_blank"><u>Let's have a coffee!</u></a>
-                            Or find me on <a href="https://www.linkedin.com/in/linhsuan/" target="_blank"><u>LinkedIn</u></a>, <a href="https://www.instagram.com/studio.amberlin/" target="_blank"><u>Instagram</u></a>
+                            New York, New York<br /><div id="txt"></div>
                         </h3>
                     </div>
                 </div>
@@ -347,22 +357,40 @@
 
 
                     
-                                                           <div
-                        class="gallery-item gallery-item--animation dark"
-                        style="
-                            --cols: 3;
-                            --rows: 3;
-                            --cols-md: 6;
-                            --rows-md: 6;
-                            --cols-sm: 12;
-                            --rows-sm: 1;
-                                            background-color: #0d0d0d;
-                        "
-                    >
-                        <div class="gallery-item__bg-image">
-                           
-                        </div>
-                    </div> 
+<div
+    class="gallery-item gallery-item--text dark"
+    style="
+        --cols: 3;
+        --rows: 3;
+        --cols-md: 6;
+        --rows-md: 6;
+        --cols-sm: 12;
+        --rows-sm: 12;
+    "
+>
+    <!---->
+    <!---->
+    <!---->
+    <div class="gallery-item-text">
+        <div class="base-card base-card--border base-card--border-bottom">
+            <div class="base-card__container">
+                <div class="base-card__start">
+                    <div class="d-flex flex-column gap-1">
+                        <h3 class="type-h3">
+                            <a href="mailto: amberhsuanlin@gmail.com" target="_blank"><u>Let's have a coffee!</u></a>
+                            Or find me on <a href="https://www.linkedin.com/in/linhsuan/" target="_blank"><u>LinkedIn</u></a>, <a href="https://www.instagram.com/studio.amberlin/" target="_blank"><u>Instagram</u></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+</div>
 
 
                     
