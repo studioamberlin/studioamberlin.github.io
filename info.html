@@ -51,7 +51,7 @@
         h = h ? h : 12; // the hour '0' should be '12'
         m = checkTime(m);
         s = checkTime(s);
-        document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s + ampm;
+        document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s + " " + ampm;
         setTimeout(startTime, 1000);
       }
       
